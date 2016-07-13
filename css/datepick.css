@@ -1,0 +1,231 @@
+.laydate_box {
+    margin: auto;
+    right: 0;
+    width: 240px;
+    opacity: 1;
+    background-color: #fff;
+}
+
+.laydate_top {
+    position: relative;
+    background-color: #6182b9;
+    height: 67px;
+    z-index: 99;
+}
+
+.laydate_ym {
+    height: 24px;
+    padding: 5px;
+    position: relative;
+}
+
+.laydate_ym>a {
+    display: block;
+    float: left;
+    width: 20px;
+    height: 24px;
+    position: relative;
+}
+
+.laydate_ym>a cite {
+    display: block;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    position: absolute;
+    top: 7px;
+    left: 5px;
+}
+
+.laydate_ym>a cite.prev_year_btn {
+    border-right-color: #fff;
+}
+
+.laydate_ym>a cite.next_year_btn {
+    border-left-color: #fff;
+}
+
+.laydate_ym>a cite.prev_month_btn {
+    border-right-color: #6282b9;
+}
+
+.laydate_ym>a cite.next_month_btn {
+    border-left-color: #6282b9;
+}
+
+.laydate_ym input {
+    width: 188px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    color: #fff;
+    float: left;
+}
+
+.laydate_ym label {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    top: 15px;
+    left: 60%;
+}
+
+.laydate_ym label.show_years_btn {
+    border-top-color: #fff;
+}
+
+.laydate_ym label.show_months_btn {
+    border-top-color: #6282b9;
+}
+
+.laydate_m {
+    background-color: #f3f3f3;
+}
+
+.laydate_m input {
+    color: #6182b9;
+}
+
+.laydate_yms {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    overflow: hidden;
+    text-align: center;
+    height: 272px;
+    z-index: 2;
+    padding: 0 40px;
+}
+
+.laydate_yms a {
+    display: block;
+    height: 25px;
+    width: 160px;
+    position: relative;
+}
+
+.laydate_yms a:first-child {
+    border-bottom: 1px solid #6282b9;
+}
+
+.laydate_yms a:last-child {
+    border-top: 1px solid #6282b9;
+}
+
+.laydate_yms a cite {
+    border: 5px solid transparent;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 75px;
+    top: 8px;
+}
+
+.laydate_yms a cite.year_up {
+    border-bottom-color: #6282b9;
+}
+
+.laydate_yms a cite.year_down {
+    border-top-color: #6282b9;
+}
+
+.laydate_yms ul {
+    margin: 0;
+    padding: 0;
+    height: 220px;
+    overflow: hidden;
+    list-style: none;
+}
+
+.laydate_yms ul li {
+    width: 50%;
+    float: left;
+    text-align: center;
+    line-height: 27.5px;
+}
+
+.laydate_year_picked {
+    color: #fff;
+    background-color: #6282b9;
+    border-radius: 14px;
+}
+
+.laydate_yms cite {
+    display: block;
+}
+
+#laydate_ms {
+    padding: 10px 38px;
+    height: 219px;
+}
+
+#laydate_ms span {
+    display: block;
+    width: 82px;
+    float: left;
+    line-height: 24px;
+    margin-top: 5px;
+}
+
+.laydate_month_picked {
+    color: #fff;
+    background-color: #6182b9;
+    border-radius: 12px;
+}
+
+.laydate_table {
+    text-align: center;
+}
+
+.laydate_table td,
+.laydate_table th {
+    width: 34px;
+    height: 30px;
+}
+
+.laydate_day_this_month {
+    color: #6282b9
+}
+
+.laydate_day_today {
+    border: 1px solid #6282b9;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.laydate_day_picked {
+    color: #fff;
+    background-color: #6282b9;
+    border-radius: 15px;
+}
+
+.laydate_bottom {}
+
+.laydate_btn {
+    overflow: hidden;
+}
+
+.laydate_btn a {
+    display: block;
+    float: left;
+    width: 50%;
+    text-align: center;
+    background-color: #6182b9;
+    color: #fff;
+    border-right: 1px solid #fff;
+    box-sizing: border-box;
+    height: 32px;
+    line-height: 32px;
+}
+
+.laydate_btn a:last-child {
+    border-right: none;
+}
+
+.laydate_hidden {
+    display: none;
+}

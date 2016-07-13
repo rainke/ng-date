@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1.0, user-scalable=no">
+    <title>ng-datepick</title>
+    <link rel="stylesheet" href="../css/datepick.css">
+    <script src="../js/angular.js"></script>
+    <script src="../js/angular-date.js"></script>
+    <script>
+    angular.module('app', ['ng-date']).controller('demo', function($scope, datePicker) {
+        $scope.config = '2016-6-21';
+        $scope.config2 = '2015-6-21'
+        $scope.open = function() {
+            // console.log(this)
+            var p = datePicker.open($scope.config);
+            p.then(function(s) {
+                $scope.config = s
+            })
+        };
+        $scope.open2 = function() {
+            var p = datePicker.open($scope.config2);
+            p.then(function(s) {
+                $scope.config2 = s
+            })
+        }
+    })
+    </script>
+</head>
+
+<body ng-controller="demo">
+    <input type="text" ng-model="config" ng-click="open()" readonly>
+    <input type="text" ng-model="config2" ng-click="open2()" readonly>
+    <!-- <dbank-date config="config"></dbank-date> -->
+</body>
+
+</html>

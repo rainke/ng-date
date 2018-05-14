@@ -77,7 +77,8 @@ function datePick(datePicker){
         link: function(scope, el, attr) {
             var date = attr.date.split('-');
             var today =scope.today =  new Date();
-            if(date == '') {
+            // if(date == '') {
+            if(date == ''||typeof(date)=='undefined'||date=='undefined') {//修复在未设置默认日期的情况下，日期弹窗全部显示NaN
                 scope.config = {
                     year: today.getFullYear(),
                     month:today.getMonth() + 1,
